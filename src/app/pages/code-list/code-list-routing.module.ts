@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CodeListComponent } from './code-list.component';
+import {DiagnosisComponent} from './diagnosis/diagnosis.component';
 
 const routes: Routes = [{
   path: '',
   component: CodeListComponent,
-  children: [
-  ],
+  children: [{
+    path: 'table',
+    component: DiagnosisComponent,
+  }],
 }];
 
 @NgModule({
