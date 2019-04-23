@@ -84,7 +84,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Coding List Browser',
-        link: '/pages/code-list/diagnosis/diagnosis-table',
+        link: '/pages/code-list/product',
       },
       {
         title: 'Code List Mappings',
