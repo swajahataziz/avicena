@@ -68,7 +68,7 @@ export class DiagnosisTableComponent {
   };
 
   source: LocalDataSource = new LocalDataSource();
-  private rowData: string;
+  private rowData: Object;
 
   constructor(private service: SmartTableData) {
     const data = this.service.getData();
@@ -78,6 +78,7 @@ export class DiagnosisTableComponent {
   rowSelect(event): void {
     this.rowData = event.data.toString(); // TODO: add method for making use of data
   }
+
   onDeleteConfirm(event): void {
     if (window.confirm('Are you sure you want to delete?')) {
       event.confirm.resolve();

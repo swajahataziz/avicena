@@ -8,7 +8,7 @@ const routes: Routes = [{
   path: '',
   component: CodeListComponent,
   children: [{
-    path: 'table',
+    path: 'diagnosis',
     component: DiagnosisComponent,
   }],
 }];

@@ -8,14 +8,7 @@ interface CardSettings {
 
 @Component({
   selector: 'ngx-diagnosis',
-  styleUrls: ['./diagnosis.component.scss'],
-  templateUrl: './diagnosis.component.html',
+  template: '<router-outlet></router-outlet>',
 })
-export class DiagnosisComponent implements OnDestroy {
-
-  private alive = true;
-
-  ngOnDestroy() {
-    this.alive = false;
-  }
+export class DiagnosisComponent  {
 }
